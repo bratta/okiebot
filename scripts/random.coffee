@@ -34,5 +34,5 @@ module.exports = (robot) ->
   robot.hear /dance/i, (msg) ->
     msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/numfar_dance_of_joy.gif'
 
-  robot.head /bloom|spin|processing/i, (msg) ->
+  robot.hear /bloom|spin|processing/i, (msg) ->
     msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/bloomspin.gif'
