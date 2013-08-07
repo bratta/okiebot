@@ -19,9 +19,6 @@ module.exports = (robot) ->
   robot.hear /america/i, (msg) ->
     msg.send 'http://dl.dropbox.com/u/1506097/Images/gifs/flag_eagle.gif'
 
-  robot.hear /processing/i, (msg) ->
-    msg.send 'http://dl.dropboxusercontent.com/u/145070/animated_gifs/process_cat.gif'
-
   robot.hear /batman|yummy/i, (msg) ->
     msg.send 'https://dl.dropbox.com/u/2318857/lol/batman.gif'
 
@@ -36,3 +33,6 @@ module.exports = (robot) ->
 
   robot.hear /dance/i, (msg) ->
     msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/numfar_dance_of_joy.gif'
+
+  robot.head /bloom|spin|processing/i, (msg) ->
+    msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/bloomspin.gif'
