@@ -36,3 +36,6 @@ module.exports = (robot) ->
 
   robot.hear /bloom|spin|processing/i, (msg) ->
     msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/bloomspin.gif'
+
+  robot.hear /squee/i, (msg) ->
+    msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/starfire_squee.gif'
