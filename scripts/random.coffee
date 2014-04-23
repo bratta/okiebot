@@ -19,6 +19,9 @@ module.exports = (robot) ->
   robot.hear /america/i, (msg) ->
     msg.send 'http://dl.dropbox.com/u/1506097/Images/gifs/flag_eagle.gif'
 
+  robot.hear /murica/i, (msg) ->
+    msg.send 'http://i.imgur.com/y6dsOp7.jpg'
+
   robot.hear /batman|yummy/i, (msg) ->
     robot.adapter.send image_dump, 'https://dl.dropbox.com/u/2318857/lol/batman.gif'
 
