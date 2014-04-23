@@ -22,6 +22,9 @@ module.exports = (robot) ->
   robot.hear /murica/i, (msg) ->
     msg.send 'http://i.imgur.com/y6dsOp7.jpg'
 
+  robot.hear /larp/i, (msg) ->
+    msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/larping.gif'
+
   robot.hear /batman|yummy/i, (msg) ->
     robot.adapter.send image_dump, 'https://dl.dropbox.com/u/2318857/lol/batman.gif'
 
