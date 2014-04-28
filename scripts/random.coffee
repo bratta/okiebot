@@ -34,7 +34,7 @@ module.exports = (robot) ->
   robot.hear /batman|yummy/i, (msg) ->
     robot.adapter.send image_dump, 'https://dl.dropbox.com/u/2318857/lol/batman.gif'
 
-  robot.hear /beard|slap/i, (msg) ->
+  robot.hear /beard|(^(?!ham))slap/i, (msg) ->
     msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/beardslap.gif'
 
   robot.hear /crushing/i, (msg) ->
