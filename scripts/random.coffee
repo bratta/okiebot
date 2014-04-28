@@ -16,6 +16,9 @@ module.exports = (robot) ->
   robot.hear /acid/i, (msg) ->
     msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/acid.gif'
 
+  robot.hear /hamslap/i, (msg) ->
+    msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/hamslap.gif'
+
   robot.hear /chicken/i, (msg) ->
     robot.adapter.send image_dump, 'http://dl.dropbox.com/u/1506097/Images/gifs/canned_chick.gif'
 
