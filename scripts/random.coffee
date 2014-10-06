@@ -10,6 +10,9 @@ module.exports = (robot) ->
   #robot.hear //i, (msg) ->
     #robot.adapter.send image_dump, ''
 
+  robot.hear /dick move/i, (msg) ->
+    msg.send 'https://dl.dropboxusercontent.com/u/2318857/lol/dick_move.gif'
+
   robot.hear /clap clap/i, (msg) ->
     msg.send 'http://dl.dropbox.com/u/145070/animated_gifs/clapping.gif'
 
